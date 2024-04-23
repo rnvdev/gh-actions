@@ -1,8 +1,9 @@
 name: 05 - 2 - Event Filters and Activity Types
 
-on: pull_request:
-        - activity_type:[closed]
-        - branches: main
+on: 
+    pull_request:
+        types: [closed]
+        branches: main
 
 jobs:
     Printer:
