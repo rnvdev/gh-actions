@@ -1,0 +1,14 @@
+name: 05 - 1 - Event Filters and Activity Types
+
+on:
+    pull_request:
+        types: [opened, synchronize]
+        branches: 
+            - main
+
+jobs:
+    printer:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print Event
+              run: echo "RUnning whenever a PR is opned or synchronized AND base branch is main."
