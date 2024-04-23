@@ -6,8 +6,7 @@ on:
         branches: main
 
 jobs:
-    Printer:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Printing
-            run: echo "Running whenever a PR is closed"
+  Printer:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running whenever a PR is closed"
